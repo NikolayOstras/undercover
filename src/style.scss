@@ -1,0 +1,21 @@
+@import './styles/reset';
+@import './styles/vars';
+@import './styles/core';
+@import './styles/mixins';
+@import './styles/helpers';
+/* import components
+=======================
+*/
+@import './components/header/header';
+@import './components/menu/menu';
+@import './components/main/main';
+@import './components/form/form';
+@import './components/services/services';
+@import './components/portfolio/portfolio';
+@import './components/feedback/feedback';
+@import './components/contacts/contacts';
+@import './components/footer/footer';
+
+/* import pages
+=======================
+*/

@@ -1,0 +1,85 @@
+.header {
+	display: flex;
+	padding-right: $container-padding;
+	padding-top: 32px;
+	padding-bottom: 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	max-width: $container;
+	margin: 0 auto;
+}
+.menu-btn {
+	--bold: 1px;
+
+	width: 48px;
+	height: 24px;
+	margin-left: auto;
+	padding: 0;
+	position: relative;
+	outline: 1px solid transparent;
+	outline-offset: 12px;
+	transition: outline-color 0.35s;
+
+	&:hover,
+	&:focus {
+		outline-color: var(--color-active);
+		&::before,
+		&::after,
+		& > span {
+			background-color: var(--color-active);
+		}
+	}
+
+	> span {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		display: block;
+		height: var(--bold);
+		width: 100%;
+		background-color: var(--color-main);
+		transition: opacity 0.15s ease-out;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		background-color: var(--color-main);
+		height: var(--bold);
+		width: 100%;
+		left: 0;
+		transition: top 0.15s ease-out, transform 0.35s ease-in-out;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		top: 100%;
+	}
+}
+.menu-btn.is-active {
+	& > span {
+		opacity: 0;
+	}
+	&::before {
+		top: 50%;
+		transform: rotate(45deg);
+	}
+	&::after {
+		top: 50%;
+		transform: rotate(-45deg);
+	}
+}
+
+@media screen and (max-width: 767.98px) {
+	.menu-btn {
+		width: 24px;
+		height: 12px;
+	}
+}

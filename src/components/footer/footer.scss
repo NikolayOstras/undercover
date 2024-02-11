@@ -1,0 +1,32 @@
+footer {
+	min-height: 670px;
+	background-image: url('../img/footer.webp');
+	background-color: var(--color-bg);
+	mix-blend-mode: lighten;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+}
+.footer-text {
+	text-align: center;
+}
+
+.footer-nav {
+	margin-top: 24px;
+}
+.footer-nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 8px;
+}
+.footer-link {
+	text-transform: uppercase;
+	font-size: 12px;
+	transition: color 0.3s;
+	&:hover {
+		color: var(--color-active);
+	}
+}

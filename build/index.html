@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>UNDERCOVER DESIGN TEAM</title>
+		<link
+  	rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta property="og:title" content="UNDERCOVER DESIGN TEAM">
+		<meta property="og:description" content="Professional design team for all your needs">
+		<meta property="og:image" content="https://example.com/undercover-design-team.jpg">
+		<meta property="og:url" content="https://example.com">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="UNDERCOVER DESIGN TEAM">
+		<meta name="theme-color" content="#303030" />
+	</head>
+	<body style="background: #303030">
+<div class="container">
+	<header class="header">
+		<button class="menu-btn" aria-label="open menu">
+			<span></span>
+		</button>
+	</header>
+</div>
+
+<div class="menu">
+	<h2 class="menu__title">menu</h2>
+	<div class="menu__wrapper">
+		<div class="menu__column">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#">main</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">services</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">portfolio</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">blog</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">pricing</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">feedbacks</a>
+					</li>
+					<li class="nav__item">
+						<a href="#">contacts</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="menu__column">
+			<button class="button menu__button" id="form-btn">send message</button>
+		</div>
+	</div>
+	<img class="menu__bg" src="./img/menu-bg.jpg" alt="" />
+</div>
+
+<div class="form__wrapper" id="form">
+	<form class="form" novalidate>
+		<input class="form__input" type="text" placeholder="Name" />
+		<div class="form__error scale-up-bottom"></div>
+		<input class="form__input" type="email" placeholder="Email" />
+		<div class="form__error scale-up-bottom"></div>
+		<textarea
+			class="form__text"
+			cols="30"
+			rows="10"
+			placeholder="You message"
+		></textarea>
+		<div class="form__error scale-up-bottom"></div>
+		<button type="submit" class="button form__button">SEND</button>
+	</form>
+</div>
+
+<main>
+	<div class="container main-container">
+		<div class="main-conent">
+			<h1 class="main-title">undercover</h1>
+			<div class="main-subtitle">design team</div>
+			<div class="main-image">
+				<img src="./img/bulb.jpg" alt="light bulb" width="260" />
+			</div>
+			<h2 class="slogan text-gradient-animate">
+				our design's so wanted that we have to hide
+			</h2>
+		</div>
+		<div class="scroll-sign">
+			<span> scroll down to more </span>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				width="40px"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="m19.5 8.25-7.5 7.5-7.5-7.5"
+				/>
+			</svg>
+		</div>
+	</div>
+</main>
+
+<section class="services">
+	<div class="container">
+		<h1 class="section-title">services</h1>
+		<div class="services__wrapper">
+			<div class="services__items">
+				<nav>
+					<ul>
+						<li>
+							<button class="service-item is-active" data-id="0">
+								web design
+							</button>
+						</li>
+						<li>
+							<button class="service-item" data-id="1">logo design</button>
+						</li>
+						<li><button class="service-item" data-id="2">ui</button></li>
+						<li>
+							<button class="service-item" data-id="3">photography</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="carousel">
+				<div class="swiper services-swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide carousel-item">
+							<p>
+								Web design is our passion. Our team likes to create unique web
+								pages for our clients. Understanding users is key point to good
+								interaction with him through web design.
+							</p>
+							<img src="./img/services-0.webp" alt="" />
+						</div>
+						<div class="swiper-slide carousel-item">
+							<p>
+								Logo is the first thing customer or user will see in your
+								product. And his or her first impression will depend on it. We
+								can create logo that will satisfy you and your clients.
+							</p>
+							<img src="./img/services-1.webp" alt="" />
+						</div>
+						<div class="swiper-slide carousel-item">
+							<p>
+								Nowadays smartphones are part of our life. With help of numerous
+								apps we can do our life more simple and fun.Our UI department
+								specialists can develop and test any app that you want to
+								create.
+							</p>
+							<img src="./img/services-2.webp" alt="" />
+						</div>
+						<div class="swiper-slide carousel-item">
+							<p>
+								To create unique designs often you need some photos. In our time
+								using stock photos is kind of bad manner. So we decided to open
+								and develop our own photography department to create unique
+								products for you.
+							</p>
+							<img src="./img/services-3.webp" alt="" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="carousel__buttons">
+						<div class="button-prev">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								width="24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15.75 19.5 8.25 12l7.5-7.5"
+								/>
+							</svg>
+						</div>
+						<div class="button-next">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								width="24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="m8.25 4.5 7.5 7.5-7.5 7.5"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="portfolio">
+	<div class="container">
+		<div class="section-title">portfolio</div>
+		<div class="dropdown">
+			<button class="dropdown__button">ALL</button>
+			<ul class="dropdown__list scale-up-bottom">
+				<li>
+					<button class="dropdown__item">All</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Web Design</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Logo Design</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Branding</button>
+				</li>
+				<li>
+					<button class="dropdown__item">UI</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Photography</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Graphic Design</button>
+				</li>
+			</ul>
+		</div>
+		<div class="portfolio__wrapper">
+			<article class="card" style="background-image: url('./img/1.webp')">
+	<a href="">
+		<div class="card__info">
+			<div class="card__title">test</div>
+			<p class="card__desc">test</p>
+			<div class="card__category">web design</div>
+		</div>
+	</a>
+</article>
+
+			<article class="card" style="background-image: url('./img/2.webp')">
+	<a href="">
+		<div class="card__info">
+			<div class="card__title">test</div>
+			<p class="card__desc">test</p>
+			<div class="card__category">web design</div>
+		</div>
+	</a>
+</article>
+
+			<article class="card" style="background-image: url('./img/3.webp')">
+	<a href="">
+		<div class="card__info">
+			<div class="card__title">test</div>
+			<p class="card__desc">test</p>
+			<div class="card__category">web design</div>
+		</div>
+	</a>
+</article>
+
+			<article class="card" style="background-image: url('./img/4.webp')">
+	<a href="">
+		<div class="card__info">
+			<div class="card__title">test</div>
+			<p class="card__desc">test</p>
+			<div class="card__category">web design</div>
+		</div>
+	</a>
+</article>
+
+		</div>
+		<div class="pagination">
+			<div class="pagination__counter">1</div>
+			<button class="pagination-button pagination__prev">prev</button>
+			<div class="pagination__current">1</div>
+			<button class="pagination-button pagination__next">next</button>
+			<div class="pagination__counter">99</div>
+		</div>
+	</div>
+</section>
+
+<section class="feedback">
+	<div class="container">
+		<div class="feedback__wrapper">
+			<div class="feedback__col">
+				<div class="section-title">feedbacks</div>
+				<div class="feedback__timeline">
+					<article class="feedback-item">
+	<p class='feedback-item__text'>Workingwith.</p>
+	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
+</article>
+					<article class="feedback-item">
+	<p class='feedback-item__text'>Workingwith.</p>
+	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
+</article>
+					<article class="feedback-item">
+	<p class='feedback-item__text'>Workingwith.</p>
+	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
+</article>
+					<article class="feedback-item">
+	<p class='feedback-item__text'>Workingwith.</p>
+	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
+</article>
+				</div>
+				<button class="feedback__more">CLICK HERE FOR MORE FEEDBACKS</button>
+			</div>
+			<div class="feedback__col">
+				<div class="section-title">add feedback</div>
+				<form class="form form--fedback" novalidate>
+	<input class="form__input" type="text" placeholder="Name" />
+	<div class="form__error scale-up-bottom"></div>
+	<input class="form__input" type="email" placeholder="Email" />
+	<div class="form__error scale-up-bottom"></div>
+	<textarea
+		class="form__text"
+		cols="30"
+		rows="10"
+		placeholder="You message"
+	></textarea>
+	<div class="form__error scale-up-bottom"></div>
+	<button type="submit" class="button form__button">SEND</button>
+</form>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contacts">
+	<div class="container">
+		<div class="section-title">contacts</div>
+		<div class="contacts__wrapper">
+			<div class="contacts__col">
+				<h3 class="contacts__title">phone</h3>
+				<ul class="contacts__list">
+					<li>
+						<a href="tel:+38098000000">8-800-700-80-20</a>
+					</li>
+					<li>
+						<a href="tel:+38098000000">8-800-700-80-20</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contacts__col">
+				<h3 class="contacts__title">email</h3>
+				<ul class="contacts__list">
+					<li>
+						<a href="mailto:UNDERCOVERSUPPORT@MAIL.COM"
+							>UNDERCOVERSUPPORT@MAIL.COM</a
+						>
+					</li>
+					<li>
+						<a href="mailto:UNDERCOVERSUPPORT@MAIL.COM"
+							>UNDERCOVERSUPPORT@MAIL.COM</a
+						>
+					</li>
+				</ul>
+			</div>
+			<div class="contacts__col">
+				<h3 class="contacts__title">adress</h3>
+				<div class="contacts__adress">
+					<div>JAVASTRAAT 43,</div>
+					<div>
+						<span>AMSTERDAM</span>,
+						<span>NETHERLANDS</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img
+		class="contacts-img"
+		src="./img/contacts.jpg"
+		alt="sparkles"
+		height="400"
+	/>
+</section>
+
+<footer><div class="container">
+	<h2 class="footer-text text-gradient-animate">
+		THIS IS THE PLACE WHERE SPARKLES OF IDEA TURNS INTO FIRE
+	</h2>
+	<nav class="footer-nav">
+		<ul>
+			<li>
+				<a href="#" class="footer-link">services</a>
+			</li>
+			<li>
+				<a href="#" class="footer-link">portfolio</a>
+			</li>
+			<li>
+				<a href="#" class="footer-link">feedbacks</a>
+			</li>
+			<li>
+				<a href="#" class="footer-link">contact us</a>
+			</li>
+			<li>
+				<a href="#" class="footer-link">contacts</a>
+			</li>
+			<li>
+				<a target="_blank" href="#" class="footer-link">facebook</a>
+			</li>
+			<li>
+				<a target="_blank" href="#" class="footer-link">linkedin</a>
+			</li>
+			<li>
+				<a target="_blank" href="#" class="footer-link">twitter</a>
+			</li>
+			<li>
+				<a target="_blank" href="#" class="footer-link">google+</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+</footer>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* media sizes */
+
+$xxl: var(--xxl);
+$xl: var(--xl);
+$lg: var(--lg);
+$md-2: var(--md-2);
+$md: var(--md);
+$sm: var(--sm);
+$xs: var(--xs);
+
+/* z-index */
+$z-1: 1;
+$z-2: 2;
+$z-3: 3;
+$z-4: 4;
+$z-5: 5;
+$z-max: 1000;
+
+// container width
+$container: 1280px;
+$container-padding: 32px;
+
+:root {
+	--color-active: #b69b67;
+	--color-main: #b4b4b4;
+	--color-light: #454545;
+	--color-bg: #303030;
+}

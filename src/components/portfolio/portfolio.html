@@ -1,0 +1,48 @@
+<section class="portfolio">
+	<div class="container">
+		<div class="section-title">portfolio</div>
+		<div class="dropdown">
+			<button class="dropdown__button">ALL</button>
+			<ul class="dropdown__list scale-up-bottom">
+				<li>
+					<button class="dropdown__item">All</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Web Design</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Logo Design</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Branding</button>
+				</li>
+				<li>
+					<button class="dropdown__item">UI</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Photography</button>
+				</li>
+				<li>
+					<button class="dropdown__item">Graphic Design</button>
+				</li>
+			</ul>
+		</div>
+		<div class="portfolio__wrapper">
+			@@include('./components/portfolio/card/card.html',
+			{"img":"1.webp","title":"test","desc":"test","cat":"web design"})
+			@@include('./components/portfolio/card/card.html',
+			{"img":"2.webp","title":"test","desc":"test","cat":"web design"})
+			@@include('./components/portfolio/card/card.html',
+			{"img":"3.webp","title":"test","desc":"test","cat":"web design"})
+			@@include('./components/portfolio/card/card.html',
+			{"img":"4.webp","title":"test","desc":"test","cat":"web design"})
+		</div>
+		<div class="pagination">
+			<div class="pagination__counter">1</div>
+			<button class="pagination-button pagination__prev">prev</button>
+			<div class="pagination__current">1</div>
+			<button class="pagination-button pagination__next">next</button>
+			<div class="pagination__counter">99</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,137 @@
+.services {
+	&__wrapper {
+		display: flex;
+		gap: 8px;
+		margin-top: 16px;
+		position: relative;
+		z-index: 0;
+	}
+
+	&__items > nav > ul {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.service-item {
+	font-size: clamp(1.125rem, 0.875rem + 1.25vw, 1.875rem);
+	color: var(--color-main);
+	text-transform: uppercase;
+	transition: color 0.35s;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 0%;
+		height: 1px;
+		background-color: var(--color-main);
+		display: block;
+		transition: width 0.25s;
+	}
+	&::before {
+		content: '';
+		width: 0%;
+		height: 1px;
+		background-color: var(--color-active);
+		display: block;
+		transition: width 0.25s;
+		transform: translateY(-4px);
+	}
+
+	&:hover {
+		color: var(--color-active);
+
+		&::after {
+			width: 100%;
+		}
+	}
+
+	&.is-active {
+		&::before {
+			width: 100%;
+		}
+	}
+}
+.carousel {
+	max-width: 600px;
+	position: relative;
+	&__buttons {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+}
+.swiper {
+}
+.services-swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.carousel-item {
+	height: 600px;
+	background-color: var(--color-bg);
+
+	position: relative;
+	& > p {
+		padding: 0 12px;
+	}
+
+	& > img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+		z-index: -1;
+		mix-blend-mode: lighten;
+	}
+}
+.swiper-pagination {
+}
+.button-prev,
+.button-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+	cursor: pointer;
+	border-radius: 50%;
+
+	background-color: rgba($color: #000000, $alpha: 0.5);
+}
+.carousel .swiper-pagination-bullet {
+	background-color: var(--color-main);
+	transition: transform 0.2s;
+}
+.carousel .swiper-pagination-bullet-active {
+	background-color: var(--color-active);
+	transform: scale(115%);
+}
+@media screen and (max-width: 992px) {
+	.services__wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.services__items > nav > ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.carousel {
+		margin-top: 16px;
+	}
+}
+@media screen and (max-width: 767.98px) {
+	.carousel {
+		max-width: 100vw;
+		width: 100%;
+	}
+}

@@ -1,0 +1,17 @@
+.feedback-item {
+	max-width: 600px;
+
+	&__text {
+		padding-left: 24px;
+		font-size: clamp(1.125rem, 0.875rem + 1.25vw, 1.875rem);
+	}
+
+	&__name {
+		text-align: right;
+		border-top: 1px solid var(--color-active);
+		text-transform: uppercase;
+		font-weight: 600;
+		padding-top: 12px;
+	}
+}
+

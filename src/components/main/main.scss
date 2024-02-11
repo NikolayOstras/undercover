@@ -1,0 +1,90 @@
+.main-container {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(var(--height) - var(--header-height));
+	padding-bottom: 12px;
+}
+
+.main-title {
+	color: var(--color-active);
+	font-size: clamp(1.5rem, 0.75rem + 3.75vw, 3.75rem);
+	font-weight: 600;
+
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+.main-subtitle {
+	width: fit-content;
+	margin: 0 auto;
+	font-size: clamp(1rem, 0.7083rem + 1.4583vw, 1.875rem);
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 25%;
+}
+.main-image {
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 32px;
+}
+.main-image > img {
+	transform: rotate(180deg);
+	mix-blend-mode: lighten;
+}
+@media (prefers-reduced-motion: no-preference) {
+	.main-image > img {
+		animation: bulb infinite 5s ease-in-out;
+	}
+	@keyframes bulb {
+		0% {
+			opacity: 0.75;
+			filter: brightness(1);
+		}
+		50% {
+			opacity: 1;
+			filter: brightness(1.5);
+		}
+		100% {
+			opacity: 0.75;
+			filter: brightness(1);
+		}
+	}
+}
+
+.slogan {
+	text-transform: uppercase;
+	font-size: clamp(1rem, 0.5417rem + 2.2917vw, 2.375rem);
+	font-weight: 600;
+	text-align: center;
+}
+
+.scroll-sign {
+	padding-top: 12px;
+	color: var(--color-light);
+	font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.25rem);
+	width: fit-content;
+	margin: auto auto 0 auto;
+
+	text-transform: uppercase;
+
+	> svg {
+		display: block;
+		margin: 12px auto 0;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes slide-bottom {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(10px);
+		}
+	}
+
+	.scroll-sign > svg {
+		animation: slide-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+			alternate backwards;
+	}
+}
