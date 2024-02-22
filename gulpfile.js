@@ -19,7 +19,7 @@ const watcher = () => {
 }
 const styles = gulp.series(scss)
 const buildApp = gulp.series(html, styles, build, css, img)
-const dev = gulp.series(html, scss, build, gulp.parallel(watcher))
+const dev = gulp.series(html, scss, css, build, gulp.parallel(watcher))
 
 gulp.task('image', img)
 gulp.task('build', buildApp)

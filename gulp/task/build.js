@@ -1,4 +1,4 @@
-import gulpEsbuild from 'gulp-esbuild';
+import gulpEsbuild from 'gulp-esbuild'
 
 export const build = () => {
 	return app.gulp
@@ -7,11 +7,11 @@ export const build = () => {
 			gulpEsbuild({
 				outfile: 'app.js',
 				bundle: true,
-				// minify: true,
+				minify: true,
 				incremental: true,
-				keepNames: true 
+				keepNames: true,
 			})
 		)
 		.pipe(app.gulp.dest(app.path.build.js))
-		.pipe(app.plugins.browsersync.stream());
-};
+		.pipe(app.plugins.browsersync.stream())
+}
