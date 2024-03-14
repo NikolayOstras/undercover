@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* ubuntu-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/ubuntu-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/ubuntu-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+	--header-height: 72px;
+}
 body {
 	display: flex;
 	flex-direction: column;
