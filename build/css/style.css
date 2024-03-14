@@ -122,6 +122,7 @@ button {
 }
 
 body {
+  scroll-behavior: smooth;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

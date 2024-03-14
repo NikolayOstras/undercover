@@ -25,7 +25,10 @@
 :root {
 	--header-height: 72px;
 }
+html {
+}
 body {
+	scroll-behavior: smooth;
 	display: flex;
 	flex-direction: column;
 	color: var(--color-main);

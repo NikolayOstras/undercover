@@ -2,7 +2,8 @@
 import { formValidation } from './components/form/form'
 import { dropdownHandler } from './components/portfolio/portfolio'
 import { servicesBtnsHandler } from './components/services/services'
-// Get scrollbar width
+
+// Получить ширину полосы прокрутки
 function getScrollbarWidth() {
 	const outer = document.createElement('div')
 	outer.style.visibility = 'hidden'
@@ -20,7 +21,7 @@ function getScrollbarWidth() {
 	return scrollbarWidth
 }
 
-// Fix mobile nav bar
+// Фиксирование высоты документа
 const documentHeight = () => {
 	const doc = document.documentElement
 	doc.style.setProperty('--height', `${window.innerHeight}px`)
@@ -29,7 +30,7 @@ const documentHeight = () => {
 window.addEventListener('resize', documentHeight)
 documentHeight()
 
-// Get header height
+// Получить высоту шапки
 const headerHeight = () => {
 	const header = document.querySelector('.header')
 	if (!header) return
@@ -39,7 +40,7 @@ const headerHeight = () => {
 
 headerHeight()
 
-// Burger
+// Бургер
 const menuBtn = document.querySelector('.menu-btn')
 const menu = document.querySelector('.menu')
 const form = document.querySelector('#form')
@@ -66,7 +67,7 @@ const openOverlay = target => {
 }
 
 const closeOverlay = () => {
-	document.body.style.paddingRight = 0
+	document.body.style.paddingRight = '0'
 	document.body.classList.remove('is-lock')
 	formIsOpen = false
 	menuIsOpen = false
@@ -93,20 +94,24 @@ if (formBtn) {
 if (menuBtn) {
 	menuBtn.addEventListener('click', () => {
 		menuBtn.classList.toggle('is-active')
-		menuIsOpen || formIsOpen ? closeOverlay() : openOverlay('menu')
+		if (menuIsOpen || formIsOpen) {
+			closeOverlay()
+		} else {
+			openOverlay('menu')
+		}
 	})
 }
 
 document.addEventListener('keydown', handleEscapeKey)
 
-// Form validation
-
+// Валидация формы
 formValidation('.form')
 formValidation('.form--fedback')
 
 servicesBtnsHandler()
 
 dropdownHandler()
+
 window.onload = function () {
 	var mainImageLow = document.getElementById('main-image-low')
 	var mainImage = document.getElementById('main-image')
@@ -114,3 +119,17 @@ window.onload = function () {
 	mainImageLow.style.display = 'none'
 	console.log('All resources have finished loading.')
 }
+
+const closeMenuOnLinkClick = () => {
+	const menu = document.querySelector('.menu')
+	const links = menu.querySelectorAll('.nav__list a')
+
+	links.forEach(link => {
+		link.addEventListener('click', () => {
+			closeOverlay()
+			menuBtn.classList.remove('is-active')
+		})
+	})
+}
+
+document.addEventListener('DOMContentLoaded', closeMenuOnLinkClick)

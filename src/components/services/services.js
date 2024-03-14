@@ -4,8 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules'
 export const servicesSwiper = new Swiper('.services-swiper', {
 	modules: [Navigation, Pagination],
 	loop: true,
-	preloadImages: true,
-	lazy: false,
+	lazy: true,
 	navigation: {
 		nextEl: '.button-next',
 		prevEl: '.button-prev',
