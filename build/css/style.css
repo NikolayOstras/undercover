@@ -567,6 +567,7 @@ main {
   -webkit-transition: color 0.35s;
   transition: color 0.35s;
   position: relative;
+  padding: 12px 0;
 }
 
 .service-item::after {
@@ -879,7 +880,8 @@ main {
 
 .feedback-item__text {
   padding-left: 24px;
-  font-size: clamp(1.125rem, 0.875rem + 1.25vw, 1.875rem);
+  padding-bottom: 12px;
+  font-size: 14px;
 }
 
 .feedback-item__name {
@@ -1098,13 +1100,9 @@ footer {
             align-items: center;
   }
 
-  .services__items > nav > ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .services__items > nav > ul > li > button {
+    width: 100%;
+    text-align: center;
   }
 
   .carousel {

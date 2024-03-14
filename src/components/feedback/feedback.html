@@ -4,14 +4,7 @@
 			<div class="feedback__col">
 				<div class="section-title">feedbacks</div>
 				<div class="feedback__timeline">
-					@@include('./components/feedback/item/item.html',
-					{"text":"Workingwith.","name":"SadasdasRAH ROBINSON"})
-					@@include('./components/feedback/item/item.html',
-					{"text":"Workingwith.","name":"SadasdasRAH ROBINSON"})
-					@@include('./components/feedback/item/item.html',
-					{"text":"Workingwith.","name":"SadasdasRAH ROBINSON"})
-					@@include('./components/feedback/item/item.html',
-					{"text":"Workingwith.","name":"SadasdasRAH ROBINSON"})
+					@@loop("./components/feedback/item/item.html", "../data.json")
 				</div>
 				<button class="feedback__more">CLICK HERE FOR MORE FEEDBACKS</button>
 			</div>

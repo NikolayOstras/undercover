@@ -1,8 +1,7 @@
 'use strict'
 import { formValidation } from './components/form/form'
-import { servicesSwiper } from './components/services/services'
-import { servicesBtnsHandler } from './components/services/services'
 import { dropdownHandler } from './components/portfolio/portfolio'
+import { servicesBtnsHandler } from './components/services/services'
 // Get scrollbar width
 function getScrollbarWidth() {
 	const outer = document.createElement('div')
@@ -108,3 +107,10 @@ formValidation('.form--fedback')
 servicesBtnsHandler()
 
 dropdownHandler()
+window.onload = function () {
+	var mainImageLow = document.getElementById('main-image-low')
+	var mainImage = document.getElementById('main-image')
+	mainImage.style.display = 'block'
+	mainImageLow.style.display = 'none'
+	console.log('All resources have finished loading.')
+}

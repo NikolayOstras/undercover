@@ -20,6 +20,7 @@
 	text-transform: uppercase;
 	transition: color 0.35s;
 	position: relative;
+	padding: 12px 0;
 
 	&::after {
 		content: '';
@@ -67,14 +68,7 @@
 		z-index: 1;
 	}
 }
-.swiper {
-}
-.services-swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
+
 .carousel-item {
 	height: 600px;
 	background-color: var(--color-bg);
@@ -95,8 +89,7 @@
 		mix-blend-mode: lighten;
 	}
 }
-.swiper-pagination {
-}
+
 .button-prev,
 .button-next {
 	display: flex;
@@ -121,9 +114,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.services__items > nav > ul {
-		flex-direction: row;
-		flex-wrap: wrap;
+	.services__items > nav > ul > li > button {
+		width: 100%;
+		text-align: center;
 	}
 	.carousel {
 		margin-top: 16px;

@@ -3,7 +3,8 @@
 
 	&__text {
 		padding-left: 24px;
-		font-size: clamp(1.125rem, 0.875rem + 1.25vw, 1.875rem);
+		padding-bottom: 12px;
+		font-size: 14px;
 	}
 
 	&__name {
@@ -14,4 +15,3 @@
 		padding-top: 12px;
 	}
 }
-

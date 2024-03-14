@@ -8,6 +8,8 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+			media="print"
+			onload="this.media='all'; this.onload = null"
 		/>
 		<link rel="stylesheet" href="./css/style.min.css" />
 		<meta property="og:title" content="UNDERCOVER DESIGN TEAM" />
@@ -65,7 +67,7 @@
 			<button class="button menu__button" id="form-btn">send message</button>
 		</div>
 	</div>
-	<img class="menu__bg" src="./img/menu-bg.jpg" alt="" />
+	<img class="menu__bg" src="./img/menu-bg.jpg" alt="" loading="lazy" />
 </div>
 
 <div class="form__wrapper" id="form">
@@ -90,8 +92,16 @@
 		<div class="main-conent">
 			<h1 class="main-title">undercover</h1>
 			<div class="main-subtitle">design team</div>
-			<div class="main-image">
-				<img src="./img/bulb.jpg" alt="light bulb" width="260" />
+			<div class="main-image" id="main-image" style="display: none">
+				<img src="./img/bulb.jpg" alt="light bulb" width="260" height="390" />
+			</div>
+			<div class="main-image" id="main-image-low">
+				<img
+					src="./img/bulb-min.jpg"
+					alt="light bulb"
+					width="260"
+					height="390"
+				/>
 			</div>
 			<h2 class="slogan text-gradient-animate">
 				our design's so wanted that we have to hide
@@ -308,20 +318,14 @@
 				<div class="section-title">feedbacks</div>
 				<div class="feedback__timeline">
 					<article class="feedback-item">
-	<p class='feedback-item__text'>Workingwith.</p>
-	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
-</article>
-					<article class="feedback-item">
-	<p class='feedback-item__text'>Workingwith.</p>
-	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
-</article>
-					<article class="feedback-item">
-	<p class='feedback-item__text'>Workingwith.</p>
-	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
-</article>
-					<article class="feedback-item">
-	<p class='feedback-item__text'>Workingwith.</p>
-	<div class="feedback-item__name">SadasdasRAH ROBINSON</div>
+	<p class='feedback-item__text'>I really appreciate the web design team's attention to detail. The final product looks polished and professional. The layout is clean, and the color scheme is visually appealing. Great job on creating a user-friendly experience!</p>
+	<div class="feedback-item__name">John</div>
+</article><article class="feedback-item">
+	<p class='feedback-item__text'>The web design team did an excellent job of understanding our brand identity and incorporating it into the website design. The visuals perfectly reflect our company's personality and values. The team's creativity and ability to capture our vision exceeded my expectations.</p>
+	<div class="feedback-item__name">Sarah</div>
+</article><article class="feedback-item">
+	<p class='feedback-item__text'>I'm impressed with the web design team's responsiveness and efficiency. They delivered the project on time and were proactive in communicating any challenges or changes. Their professionalism and organizational skills made the entire process smooth and stress-free.</p>
+	<div class="feedback-item__name">Mark</div>
 </article>
 				</div>
 				<button class="feedback__more">CLICK HERE FOR MORE FEEDBACKS</button>
@@ -395,6 +399,7 @@
 		src="./img/contacts.jpg"
 		alt="sparkles"
 		height="400"
+		loading="lazy"
 	/>
 </section>
 
